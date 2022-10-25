@@ -1,0 +1,188 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorPrincipal: #fa573a;
+    --colorSecundario: #21242e;
+    --fontsize: 1rem;
+    --anchomaximo: 1100px;
+
+}
+
+/* Layout */
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Container {
+
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+
+/* Inicio del header */
+
+
+header .navtop {
+    background-color: var(--colorSecundario);
+    padding: 1.25rem 0;
+}
+
+header .navtop .container {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+header .navtop a {
+
+    color: var(--colorPrincipal);
+    text-decoration: none;
+
+}
+
+header .navtop {
+    font-size: 110%;
+}
+
+
+header .navtop span {
+
+    color: white;
+    display: none;
+}
+
+
+/* Nav */
+
+header nav {
+    padding: 1em;
+
+}
+
+header nav .container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+header nav .logo {
+
+    max-width: 6.25rem;
+
+}
+
+header .hamburguesa {
+
+    cursor: pointer;
+    width: 1.857em;
+}
+
+header .hamburguesa div {
+
+    border-top: 1px solid black;
+    width: 30px;
+    margin-bottom: 0.625rem;
+
+}
+
+header .menu {
+    text-align: center;
+    width: 100%;
+    padding-top: 0.3750rem;
+}
+
+header .menu li {
+    display: block;
+}
+
+header .menu a {
+
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #aaa;
+    color: #aaa;
+
+}
+
+header .menu:is(.activo, a:hover) {
+    color: var(--colorPrincipal);
+
+}
+
+
+/*Media Queries*/
+
+
+@media(min-width:48rem) {
+
+    header .navtop span {
+
+        display: inline;
+    }
+
+    header .navtop .container {
+
+        justify-content: space-between;
+    }
+
+}
+
+
+
+
+
+
+@media(min-width:1004px) {
+
+
+    header .hamburguesa {
+        display: none;
+
+    }
+
+    header .menu {
+        width: auto;
+        text-align: right;
+        padding-top: 0;
+    }
+
+    header .menu li {
+
+        display: inline-block;
+
+
+    }
+
+
+    header .menu a {
+
+        display: block;
+        padding: 0.75rem 0.75rem;
+
+        border-bottom: none;
+
+    }
+}
