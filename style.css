@@ -426,6 +426,42 @@ main #ourservices article div .fas {
 
 }
 
+/* Inicio de la sección Menu */
+
+
+#menu .todaysmenu {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .menucolum1 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 0.625rem;
+}
+
+#menu .menucolum1 ul li {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 250px;
+    height: 42px;
+    margin-top: 16px;
+}
+
+#menu .menucolum1 ul li:first-child {
+    color: white;
+    background-color: var(--colorPrincipal);
+
+}
+
+
+
+
 
 
 
