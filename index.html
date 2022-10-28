@@ -63,68 +63,121 @@
         </nav>
     </header>
     <div class="hero">
-        <h1>Las mejores hambuguesas del mundo</h1>
-        <p>Bienvenido a nuestra hamburguesería</p>
-        <p>Come a partir de 15€</p>
-        <a href="">Nuestra Carta<i class="fa-solid fa-arrow-right"></i></a>
-        <div class="sociallinks">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <div class="container">
+            <h1>Las mejores hambuguesas del mundo</h1>
+            <h2>Bienvenido a nuestra hamburgusería</h2>
+            <p>Come a partir de 15€</p>
+            <div>
+                <a class="button" href="">Nuestra Carta<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <ul class="social">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+
         </div>
     </div>
     <main>
-        <section>
-            <h2>Our services</h2>
-            <article>
-                <figure>
-                    <img src="" alt="">
-                </figure>
-                <h2>1.Carne 100% natural</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, sapiente! Voluptatum labore libero
-                    unde dolorum, temporibus a voluptatem delectus nulla ut pariatur consequatur illum sapiente veniam
-                    consectetur deleniti cum sunt?</p>
-                <a href="">Leer más<i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <figure>
-                    <img src="" alt="">
-                </figure>
-                <h2>2.Cocina Moderna</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, sapiente! Voluptatum labore libero
-                    unde dolorum, temporibus a voluptatem delectus nulla ut pariatur consequatur illum sapiente veniam
-                    consectetur deleniti cum sunt?</p>
-                <a href="">Leer más<i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <figure>
-                    <img src="" alt="">
-                </figure>
-                <h2>3.Servicio Impecable</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, sapiente! Voluptatum labore libero
-                    unde dolorum, temporibus a voluptatem delectus nulla ut pariatur consequatur illum sapiente veniam
-                    consectetur deleniti cum sunt?</p>
-                <a href="">Leer más<i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-        </section>
+        <section id="ourservices">
 
-        <section>
-            <h2>About us</h2>
-            <div class="feature">
-                <figure>
-                    <img src="" alt="">
-                </figure>
-                <div class="feature-description">
-                    <h3>The history</h3>
-                    <h4>Our restaurant</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto ducimus illo exercitationem cum
-                        minus, et minima laborum voluptatem dicta impedit atque beatae! Inventore deserunt quis fugiat
-                        doloremque, dignissimos nostrum! Vel.</p>
-                    <a href="">Leer más<i class="fa-solid fa-arrow-right"></i></a>
+            <div class="container">
+                <h2>Our <span>Services</span></h2>
+                <div class="underline">
+                    <hr noshade="noshade">
+                    </hr>
+                    <span>X</span>
+                </div>
+                <div class="grid">
+                    <article>
+                        <div>
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <h3>1.Carne 100% natural</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, sapiente! Voluptatum labore
+                            libero
+                            unde dolorum, temporibus a voluptatem delectus nulla ut pariatur consequatur illum sapiente
+                            veniam
+                            consectetur deleniti cum sunt?</p>
+                        <a class="enlace" href="">Leer más<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article>
+                        <div>
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <h3>2.Cocina moderna</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, sapiente! Voluptatum labore
+                            libero
+                            unde dolorum, temporibus a voluptatem delectus nulla ut pariatur consequatur illum sapiente
+                            veniam
+                            consectetur deleniti cum sunt?</p>
+                        <a class="enlace" href="">Leer más<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article>
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <h3>3. Servicio Impecable</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, sapiente! Voluptatum labore
+                            libero
+                            unde dolorum, temporibus a voluptatem delectus nulla ut pariatur consequatur illum sapiente
+                            veniam
+                            consectetur deleniti cum sunt?</p>
+                        <a class="enlace" href="">Leer más<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
                 </div>
             </div>
         </section>
-    </main>
+
+        <section id="aboutus">
+            <div class="container">
+                <h2>About <span>Us</span></h2>
+                <div class="underline">
+                    <hr noshade="noshade">
+                    </hr>
+                    <span>X</span>
+                </div>
+
+                <article class="grid">
+                    <figure>
+                        <div class="frame">
+                            <img src="./images/about-main.jpg" alt="our chef">
+                        </div>
+                    </figure>
+                    <div>
+                        <h3>The history</h3>
+                        <h4>Our restaurant</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illum ea ad commodi fuga quo nulla
+                            enim
+                            reprehenderit saepe obcaecati autem officia repellat, doloribus dolor excepturi tempora
+                            molestias
+                            veritatis ullam.</p>
+                    </div>
+                    <div>
+                        <a class="button" href="">Leer más<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <nav>Copyright &copy; - <a href="">Avisol egal</a> - <a href="">Cookies </a></nav>
+                <div class="flecha">
+                    <a href="#top"><i class="fas fa-caret-square-up"></i></a>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
