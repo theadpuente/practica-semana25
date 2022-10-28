@@ -93,13 +93,13 @@ header .navtop a {
 
 }
 
-header .navtop {
+header .navtop i {
     font-size: 110%;
 }
 
 
 header .navtop span {
-
+    display: none;
     color: white;
     display: none;
 }
@@ -108,7 +108,7 @@ header .navtop span {
 /* Nav */
 
 header nav {
-    padding: 1em;
+    padding: 1.250rem;
 
 }
 
@@ -134,8 +134,7 @@ header .hamburguesa {
 
 header .hamburguesa div {
 
-    border-top: 1px solid black;
-    width: 30px;
+    border-top: 2px solid #aaa;
     margin-bottom: 0.625rem;
 
 }
@@ -143,24 +142,28 @@ header .hamburguesa div {
 header .menu {
     text-align: center;
     width: 100%;
-    padding-top: 0.3750rem;
+    padding-top: 1.5rem;
 }
 
-header .menu li {
-    display: block;
-}
 
 header .menu a {
 
     display: block;
-    padding: 16px;
+    padding: 1.25rem 0;
     text-decoration: none;
     border-bottom: 1px solid #aaa;
     color: #aaa;
 
 }
 
-header .menu:is(.activo a:hover) {
+
+header .menu li:last-child a {
+
+    border-bottom: 0px;
+}
+
+
+header .menu :is(.activo, a:hover) {
     color: var(--colorPrincipal);
 
 }
@@ -254,16 +257,17 @@ main section .underline {
     color: var(--colorPrincipal);
 }
 
-main section div .underline hr {
+main section .underline hr {
 
     position: absolute;
     width: 100%;
     top: -1px;
-    color: var(--colorPrincipal);
+    border-color: var(--colorPrincipal);
+    font-weight: 700;
 
 }
 
-main section div .underline span {
+main section .underline span {
 
     text-align: center;
     display: block;
@@ -314,7 +318,8 @@ main #ourservices article div .fas {
 
 
 #aboutus .grid {
-    padding: 0 1.250rem;
+    padding: 0.625rem 1.250rem;
+
 }
 
 #aboutus figure {
@@ -334,6 +339,10 @@ main #ourservices article div .fas {
 
 }
 
+#aboutus .thehistory {
+
+    padding: 2rem;
+}
 
 #aboutus h4 {
 
@@ -345,6 +354,7 @@ main #ourservices article div .fas {
 #aboutus p {
 
     line-height: 150%;
+    color: #666;
     margin-bottom: var(--margingrid);
 
 
@@ -352,7 +362,7 @@ main #ourservices article div .fas {
 
 #aboutus {
 
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
 /* 
@@ -417,65 +427,73 @@ footer a:hover {
         margin-bottom: 1.5rem;
     }
 
-    @media(min-width:48rem) {
 
-        header .navtop span {
+    #aboutus .grid {
 
-            display: inline;
-        }
-
-        header .navtop .container {
-
-            justify-content: space-between;
-        }
-
-
-        footer {
-            text-align: left;
-
-        }
-
-        main section .grid {
-
-            display: grid;
-            grid-template-columns: repeat(3, 1fr)
-        }
-
-        main #ourservices .grid article:last-child {
-
-            grid-column: 3/4;
-
-        }
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    @media(min-width:1004px) {
+}
 
+@media(min-width:48rem) {
 
-        header .hamburguesa {
-            display: none;
+    header .navtop span {
 
-        }
-
-        header .menu {
-            width: auto;
-            text-align: right;
-            padding-top: 0;
-        }
-
-        header .menu li {
-
-            display: inline-block;
-
-
-        }
-
-
-        header .menu a {
-
-            display: block;
-            padding: 0.75rem 0.75rem;
-
-            border-bottom: none;
-
-        }
+        display: inline;
     }
+
+    header .navtop .container {
+
+        justify-content: space-between;
+    }
+
+
+    footer {
+        text-align: left;
+
+    }
+
+    main section .grid {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    main #ourservices .grid article:last-child {
+
+        grid-column: 3/4;
+
+    }
+}
+
+@media(min-width:1004px) {
+
+
+    header .hamburguesa {
+        display: none;
+
+    }
+
+    header .menu {
+        width: auto;
+        text-align: right;
+        padding-top: 0rem;
+    }
+
+    header .menu li {
+
+        display: inline-block;
+
+
+    }
+
+
+    header .menu a {
+
+        display: block;
+        padding: 0.75rem 0.75rem;
+
+        border-bottom: none;
+
+    }
+}
