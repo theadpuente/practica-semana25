@@ -336,6 +336,7 @@ main #ourservices article div .fas {
 
     font-weight: 700;
     font-size: 110%;
+    margin-top: 2.5em;
 
 }
 
@@ -361,6 +362,28 @@ main #ourservices article div .fas {
     margin-bottom: 70px;
 }
 
+
+#aboutus figure {
+    transform: scale(0.85);
+}
+
+
+#aboutus figure .frame {
+
+    transform: rotateZ(10deg);
+    transition: 0.5s;
+}
+
+#aboutus figure .frame img {
+
+    transform: rotateZ(-10deg);
+    transition: 0.5s;
+}
+
+#aboutus figure:hover :is(.frame, img) {
+
+    transform: rotateZ(0deg);
+}
 
 /* Página Blog */
 
