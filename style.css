@@ -202,8 +202,9 @@ header .menu :is(.activo, a:hover) {
 .hero h2 {
 
     margin: var(--margingrid) 0;
+    color: #fa573a;
     font-size: 1.25rem;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px var(--colorSecundario);
 
 }
 
@@ -515,10 +516,13 @@ main #ourservices article div .fas {
     line-height: 150%;
 }
 
-#menu .menucolum1 .underline2 hr {
+#menu .underline-menu {
 
+    width: 45px;
+}
+
+.underline-menu hr {
     border-color: var(--colorPrincipal);
-    width: 40px;
 
 }
 
